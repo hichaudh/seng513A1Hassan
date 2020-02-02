@@ -1,0 +1,258 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./campnou2.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-color: #000;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 25px;
+	border: 1px solid transparent;
+	transition: 0.5s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+	opacity: 0.6;
+}
+
+.logo img{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 26%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.title h1{
+	color: #fff;
+	font-size: 75px;
+}
+
+.body{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.body p{
+	color: #fff;
+	font-size: 30px;
+	opacity: 0.8;
+}
+
+.leoIndex{
+	width: 50%;
+	float: right;
+}
+
+.leoIndex img{
+	width: 100%;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+
+.stats, th, td{
+	font-size: 11pt;
+	color: #fff;
+	border: 1px solid #fff;
+	border-collapse: collapse;
+	opacity: 0.96;
+	width: 100%;
+}
+
+.statsTable{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+th, td{
+	padding: 10px;
+	text-align: center;
+}
+
+th{
+	background-color: #004D98;
+	color: white;
+}
+tr:nth-child(even){
+	background-color: #001728;
+	opacity: 0.8;
+}
+tr:nth-child(odd){
+	background-color: black;
+}
+
+#pictures{
+	position: absolute;
+	top: 40%;
+	left: 41%;
+	transform: translate(-50%, -50%);
+	height: 23em;
+	width: 31.25em;
+	margin: 3em auto;
+	cursor: pointer;
+	perspective: 1500px;
+	transform-style: preserve-3d;
+}
+
+#pictures img{
+	border: 5px solid #fff;
+}
+
+#pictures figure{
+	position: absolute;
+	margin: 0;
+	height: 20.8em;
+	width: 31.25em;
+	opacity: 0;
+}
+
+#pictures figure:nth-of-type(1){
+	animation: bild 30s ease-in-out infinite;
+}
+
+#pictures figure:nth-of-type(2){
+	animation: bild 30s 6s ease-in-out infinite;
+}
+
+#pictures figure:nth-of-type(3){
+	animation: bild 30s 12s ease-in-out infinite;
+}
+
+#pictures figure:nth-of-type(4){
+	animation: bild 30s 18s ease-in-out infinite;
+}
+
+#pictures figure:nth-of-type(5){
+	animation: bild 30s 24s ease-in-out infinite;
+}
+
+#pictures figure:nth-of-type(6){
+	animation: bild 30s 30s ease-in-out infinite;
+}
+
+@keyframes bild{
+	6.66%{
+		opacity: 1;
+		z-index: 3;
+		transform: rotateX(0deg) translateZ(170px);
+	}
+	20%{
+		opacity: 1;
+		z-index: 4;
+		transform: rotateX(0deg) translateZ(175px);
+	}
+	20.66%{
+		opacity: 1;
+		z-index: 2;
+		transform: rotateX(-90deg) translateZ(175px);
+	}
+	20.67%, 100%{
+		opacity: 0;
+		z-index: 1;
+		transform: rotateX(90deg) translateZ(175px);
+	}
+	0%{
+		opacity: 1;
+		z-index: 1;
+		transform: rotateX(90deg) translateZ(165px);
+	}
+}
+
+.team{
+	overflow: hidden;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.team h1{
+	color: #fff;
+	margin-bottom: 60px;
+	font-size: 75px;
+}
+
+.borderAbout{
+	display: block;
+	margin: auto;
+	width: 160px;
+	height: 2px;
+	background: #fff;
+	margin-bottom: 40px;
+}
+
+.ps{
+	margin-bottom: 40px;
+}
+
+.ps a{
+	display: inline-block;
+	margin: 0 30px;
+	width:  275px;
+	height: 275px;
+	overflow: hidden;
+	border-radius: 50%
+}
+
+.ps a img{
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 0.4s all;
+}
+
+.ps a:hover > img{
+	filter: none;
+}
+
+.section{
+	width: 600px;
+	margin: auto;
+	font-size: 20px;
+	color: #fff;
+	text-align: justify;
+	height: 0;
+	overflow: hidden;
+}
+
+.section:target{
+	height: auto;
+}
+
+.name{
+	display: block;
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 22px;
+}
